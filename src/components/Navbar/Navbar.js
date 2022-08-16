@@ -23,7 +23,7 @@ function Navbar() {
               className="btn btn-danger fs-6  active"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <i class="fa-solid fa-arrow-left me-2"></i>
+              <i className="fa-solid fa-arrow-left me-2"></i>
               Tüm Ürünler
             </button>
           )}
