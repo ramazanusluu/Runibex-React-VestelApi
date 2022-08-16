@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import Sidebar from "../Sidebar/Sidebar";
 import "./Navbar.css";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-danger">
         <div className="container">
-          <a className="navbar-brand fs-6 me-5 active" href="/">
-            <i className="fa-solid fa-bars me-2"></i>
-            Tüm Ürünler
-          </a>
+          {!isOpen && (
+            <button
+              className="btn btn-danger fs-6 active"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <i className="fa-solid fa-bars me-2"></i>
+              Tüm Ürünler
+            </button>
+          )}
+          {isOpen && (
+            <button
+              className="btn btn-danger fs-6  active"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <i class="fa-solid fa-arrow-left me-2"></i>
+              Tüm Ürünler
+            </button>
+          )}
           <button
             className="navbar-toggler"
             type="button"
@@ -55,6 +71,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
+      {isOpen && <Sidebar />}
     </div>
   );
 }

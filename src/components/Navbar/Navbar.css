@@ -6,4 +6,10 @@
 }
 .active:hover {
   color: black !important;
+  transition: 1s;
+}
+.btn-danger {
+  background-color: #df2027 !important;
+  box-shadow: none !important;
+  border: none;
 }
