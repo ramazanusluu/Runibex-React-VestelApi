@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
 import "./Navbar.css";
 
@@ -40,22 +41,40 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item me-2">
-                <a className="nav-link active" href="/">
+                {/* <a className="nav-link active" href="/">
                   <i className="fa-solid fa-house me-2"></i>
                   Ana Sayfa
-                </a>
+                </a> */}
+                <Link to="/">
+                  <button className="btn btn-danger fs-6 active">
+                    <i className="fa-solid fa-house me-2"></i>
+                    Ana Sayfa
+                  </button>
+                </Link>
               </li>
               <li className="nav-item me-2">
-                <a className="nav-link active" href="/">
+                {/* <a className="nav-link active" href="/">
                   <i className="fa-solid fa-magnifying-glass me-2"></i>
                   Ara
-                </a>
+                </a> */}
+                <Link to="/">
+                  <button className="btn btn-danger fs-6 active">
+                    <i className="fa-solid fa-magnifying-glass me-2"></i>
+                    Ara
+                  </button>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/">
+                {/* <a className="nav-link active" href="/">
                   <i className="fa-solid fa-filter me-2"></i>
                   Filtrele
-                </a>
+                </a> */}
+                <Link to="/">
+                  <button className="btn btn-danger fs-6 active">
+                    <i className="fa-solid fa-filter me-2"></i>
+                    Filtrele
+                  </button>
+                </Link>
               </li>
             </ul>
             <ul className="navbar-nav ms-auto">
