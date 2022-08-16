@@ -3,7 +3,7 @@ import headerLogo from "../image/header-logo.png";
 
 function Header() {
   return (
-    <div>
+    <div className="my-1">
       <ul className="nav justify-content-center">
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="/">

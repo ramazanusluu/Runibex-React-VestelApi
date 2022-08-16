@@ -1,0 +1,9 @@
+.bg-danger {
+  background-color: #df2027 !important;
+}
+.navbar-hover:hover {
+  background-color: #f7272f;
+}
+.active:hover {
+  color: black !important;
+}
