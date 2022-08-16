@@ -8,7 +8,7 @@ function Loading() {
         {/* <div className="spinner-border text-danger" role="status">
           <span className="visually-hidden">Loading...</span>
         </div> */}
-        <div class="loader"></div>
+        <div className="loader"></div>
       </div>
     </div>
   );
