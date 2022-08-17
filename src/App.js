@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Categories from "./components/Categories";
 import SubCategories from "./components/SubCategories/SubCategories";
+import Products from "./components/Products/Products";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Categories />} />
           <Route path="/category/:category_id" element={<SubCategories />} />
+          <Route path="/products/:product_id" element={<Products />} />
         </Routes>
       </div>
     </>

@@ -36,7 +36,7 @@ function SubCategories() {
           <h5 className="display-6 text-center">{data.Result.CategoryName}</h5>
           {data.Result.TopCategory.SubCategoryList.map((item, key) => (
             <div key={key} className="col-sm-6 col-lg-4 col-xl-3">
-              <Link to="/">
+              <Link to={`/products/${item.ID}`}>
                 <div className="card subCategory-card mt-5">
                   <div className="card-head subCategory-card-head">
                     <img
