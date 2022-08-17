@@ -15,7 +15,6 @@ function Products() {
   if (error) return "An error has occurred: " + error.message;
 
   console.log(data);
-
   return (
     <div>
       <h5>Products - {product_id}</h5>
