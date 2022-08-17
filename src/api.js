@@ -7,3 +7,10 @@ export const fetchCategoryList = async () => {
   );
   return data;
 };
+
+export const fetchSubCategories = async (id) => {
+  const { data } = await axios.get(
+    `https://store.vrunibex.com/mobile2/mbProduct/ProductList?CategoryID=${id}`
+  );
+  return data;
+};

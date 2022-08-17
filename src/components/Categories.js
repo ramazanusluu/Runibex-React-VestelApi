@@ -16,9 +16,10 @@ function Categories() {
     <div>
       <div className="container my-5">
         <div className="row">
-          {data.Result.TreeList.map((item, key) => (
-            <CategoryCard key={key} item={item} />
-          ))}
+          {data.Result.TreeList.map(
+            (item, key) =>
+              item.ID < 11 && <CategoryCard key={key} item={item} />
+          )}
         </div>
       </div>
     </div>
