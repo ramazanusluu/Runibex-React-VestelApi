@@ -2,17 +2,15 @@ import React from "react";
 import Loading from "./Loading/Loading";
 import { useQuery } from "react-query";
 import CategoryCard from "./CategoryCard/CategoryCard";
+import { fetchCategoryList } from "../api";
 
 function Categories() {
-  const { isLoading, error, data } = useQuery("repoData", () =>
-    fetch("https://store.vrunibex.com/mobile2/mbProduct/CategoryList").then(
-      (res) => res.json()
-    )
-  );
+  const { isLoading, error, data } = useQuery("category", fetchCategoryList);
 
   if (isLoading) return <Loading />;
 
   if (error) return "An error has occurred: " + error.message;
+
   console.log(data.Result.TreeList);
   return (
     <div>
