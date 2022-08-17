@@ -14,3 +14,10 @@ export const fetchSubCategories = async (id) => {
   );
   return data;
 };
+
+export const fetchProducts = async (id) => {
+  const { data } = await axios.get(
+    `https://store.vrunibex.com/mobile2/mbProduct/ProductList?CategoryID=${id}`
+  );
+  return data;
+};
