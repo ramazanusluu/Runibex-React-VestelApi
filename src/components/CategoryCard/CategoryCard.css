@@ -7,4 +7,9 @@
 }
 .title {
   font-weight: bold !important;
+  color: black !important;
+  text-decoration: none !important;
+}
+a {
+  text-decoration: none !important;
 }

@@ -14,7 +14,7 @@ function Categories() {
   console.log(data.Result.TreeList);
   return (
     <div>
-      <div className="container">
+      <div className="container my-5">
         <div className="row">
           {data.Result.TreeList.map((item, key) => (
             <CategoryCard key={key} item={item} />
