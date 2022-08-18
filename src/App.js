@@ -7,6 +7,7 @@ import Categories from "./components/Categories";
 import SubCategories from "./components/SubCategories/SubCategories";
 import Products from "./components/Products/Products";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,9 +19,13 @@ function App() {
           <Route path="/" element={<Categories />} />
           <Route path="/category/:category_id" element={<SubCategories />} />
           <Route path="/products/:product_id" element={<Products />} />
-          <Route path="/products/:product_id/product-detail/:product" element={<ProductDetail />} />
+          <Route
+            path="/products/:product_id/product-detail/:product"
+            element={<ProductDetail />}
+          />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }
