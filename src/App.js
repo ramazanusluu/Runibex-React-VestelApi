@@ -7,6 +7,7 @@ import Categories from "./components/Categories";
 import SubCategories from "./components/SubCategories/SubCategories";
 import Products from "./components/Products/Products";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
+import Error404 from "./components/Error/Error404";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             path="/products/:product_id/product-detail/:product"
             element={<ProductDetail />}
           />
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </div>
     </>
