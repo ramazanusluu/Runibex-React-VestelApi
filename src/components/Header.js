@@ -1,14 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import headerLogo from "../image/header-logo.png";
 
 function Header() {
   return (
-    <div className="my-1">
+    <div className="my-3">
       <ul className="nav justify-content-center">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">
-            <img src={headerLogo} alt="logo" title="vestel-logo" style={{width: "140px"}}/>
-          </a>
+          <Link to="/">
+            <img
+              src={headerLogo}
+              alt="logo"
+              title="vestel-logo"
+              style={{ width: "140px" }}
+            />
+          </Link>
         </li>
       </ul>
     </div>
