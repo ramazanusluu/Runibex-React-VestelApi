@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Runibex-React-VestelApi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Runibex Akademi kapsamında 2. ara ödev için React ile geliştirmiş olduğum proje ödevinin yer aldığı repodur.
 
-## Available Scripts
 
-In the project directory, you can run:
+### Proje çalıştımadan önce dikkat edilmesi gereken hususlar;
+* Proje'yi development server üzerinden çalıştırmadan önce `npm install` komutu ile gerekli olan node_modules paketlerini yükleyiniz.
 
-### `npm start`
+Projeyi çalıştırmak için aşağıdaki komutları kullanınız.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm run start
+# or
+yarn start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine giderek sonucu görebilirsiniz. 
 
-### `npm test`
+## Proje Görselleri;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ana Sayfa
 
-### `npm run build`
+![image](https://user-images.githubusercontent.com/98388628/185808307-2988523d-5d5a-43f8-8609-e00152a95938.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Navbar üzerinde Tüm Ürünler butonuna tıklanıldığında açılan Kategori ve Alt kategori listesi
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/98388628/185808399-1a68e8d2-e72e-43c9-8d49-d51591550722.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ana Sayfa veya Sidebar menü üzerinde bulunan Kategori listesinden gitmek istenilen Kategori'ye tıklanıldığında geçiş yapılan ilgili kategoriye ait Alt kategori listesi.
 
-### `npm run eject`
+![image](https://user-images.githubusercontent.com/98388628/185808734-7ceee892-7af2-4218-8628-db2e06cfdc3b.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Alt Kategori sayfası üzerinde veya Sidebar menü üzerinde bulunan Alt kategori listesinden istenilen Alt Kategoriye tıklanıldığında geçiş yapılan ilgili alt kategoriye ait ürün listesi.   
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](https://user-images.githubusercontent.com/98388628/185809013-07141409-c4e6-49c5-9dd2-2ff42d1e6747.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ürün kart'ları üzerinde yer alan incele butonu'na tıklanıldığında ise ürün detay sayfasına yönlendirilir.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://user-images.githubusercontent.com/98388628/185809442-6548a0d3-869c-4ec1-874b-a068543df6a1.png)
 
-## Learn More
+Api üzerinden gelen verilere istek attıktan, sayfa üzerinde gösterilmesine kadar geçen sürede gösterilen loader ekranı.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://user-images.githubusercontent.com/98388628/185809501-d7b47c09-b44b-4670-91ce-3bab0d27506a.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Oluşturmuş olduğum yapı ekran genişlikleri farklı tüm cihazlarda responsive olarak çalışmaktadır.
 
-### Code Splitting
+![image](https://user-images.githubusercontent.com/98388628/185809740-72be9dab-7d2d-49a8-8767-6274d29edd51.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image](https://user-images.githubusercontent.com/98388628/185809768-1884d412-2097-4f35-ad8d-871a0c1cc3d7.png)
 
-### Analyzing the Bundle Size
+![image](https://user-images.githubusercontent.com/98388628/185809819-844e405e-ab47-44cf-b03f-0d71451bbaa0.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+![image](https://user-images.githubusercontent.com/98388628/185809797-66de6dce-cfa5-4005-8f2b-c090fb63a053.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
